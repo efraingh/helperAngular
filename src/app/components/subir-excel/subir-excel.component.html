@@ -1,0 +1,27 @@
+<h1>Subir Archivo Excel</h1>
+
+<form name="form" role="form">
+  <legend>Subir Excel</legend>
+  <div class="form-group">
+    <label for="">Archiv Excel</label>
+    <input type="file" class="form-control" (change)="incomingfile($event)" placeholder="Upload file" accept=".xlsx">
+  </div>
+  <div class="form-group">
+    <label for="">Archiv Excel</label>
+    <input type="file" (change)="onFileChange($event)" multiple="false" />
+  </div>
+  <hr>
+	<table class="sjs-table">
+		<tr *ngFor="let row of data">
+			<td *ngFor="let val of row">
+				{{val}}
+			</td>
+		</tr>
+	</table>
+  <button (click)="export()">Export!</button>
+  
+  <button type="button" class="btn btn-info" (click)="Upload()" >Upload</button>
+</form>
+
+
+

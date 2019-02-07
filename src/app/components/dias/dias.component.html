@@ -1,0 +1,27 @@
+<div class="row well">
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <div class="form-group">
+      <label for="">Dias</label>
+      <input type="text" class="form-control" id="" name="dia" [(ngModel)]="dia" (ngModelChange)="getHastaPorDia($event)">
+    </div>
+  </div>
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <div class="form-group">
+      <label for="">Del</label>
+      <input type="date" class="form-control" id="" name="dia" [(ngModel)]="desde" (ngModelChange)="getHastaPorDesde($event)">
+    </div>
+  </div>
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <div class="form-group">
+      <label for="">Al</label>
+      <input type="date" class="form-control" id="" name="dia" [(ngModel)]="hasta">
+    </div>
+  </div>
+</div>
+<div class="row well">
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    
+    <button type="button" class="btn btn-primary" (click)="getFecha()">Get Fecha</button>
+    
+  </div>
+</div>

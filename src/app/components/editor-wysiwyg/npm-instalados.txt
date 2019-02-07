@@ -1,0 +1,2 @@
+npm install angular-froala-wysiwyg --save
+https://www.froala.com/wysiwyg-editor/docs/framework-plugins/angularjs-2-4

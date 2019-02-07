@@ -16,6 +16,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@funciones/*": [
+        "src/app/funciones//*"
+      ],
+      "@angular/*": [
+        "../node_modules/@angular/*"
+      ]
+    }
   }
 }

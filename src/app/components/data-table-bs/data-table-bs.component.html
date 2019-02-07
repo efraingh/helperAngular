@@ -1,0 +1,41 @@
+<table class="table table-striped table-condensed table-hover" [mfData]="data" #mf="mfDataTable" [mfRowsOnPage]="5">
+  <thead>
+  <tr>
+      <th>
+          <mfDefaultSorter by="id">id</mfDefaultSorter>
+      </th>
+      <th>
+          <mfDefaultSorter by="first_name">first_name</mfDefaultSorter>
+      </th>
+      <th>
+          <mfDefaultSorter by="last_name">last_name</mfDefaultSorter>
+      </th>
+      <th>
+          <mfDefaultSorter by="email">email</mfDefaultSorter>
+      </th>
+      <th>
+          <mfDefaultSorter by="gender">gender</mfDefaultSorter>
+      </th>
+      <th>
+          <mfDefaultSorter by="ip_address">ip_address</mfDefaultSorter>
+      </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let item of mf.data">
+      <td>{{item.id}}</td>
+      <td>{{item.first_name}}</td>
+      <td>{{item.last_name}}</td>
+      <td>{{item.email}}</td>
+      <td>{{item.gender}}</td>
+      <td>{{item.ip_address}}</td>
+  </tr>
+  </tbody>
+  <tfoot>
+  <tr>
+      <td colspan="4">
+          <mfBootstrapPaginator [rowsOnPageSet]="[5,10,25]"></mfBootstrapPaginator>
+      </td>
+  </tr>
+  </tfoot>
+</table>
